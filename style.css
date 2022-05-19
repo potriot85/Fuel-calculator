@@ -1,0 +1,36 @@
+.rounded-img {
+  width: 30%;
+  border-radius: 50%;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 1);
+  padding: 0.6em;
+  margin-bottom: 1em;
+}
+.card {
+  border-radius: 1em;
+  text-align: center;
+  padding: 1em;
+  transition: all 0.5s ease;
+}
+.card:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+.card img {
+  border-radius: 50%;
+  width: 60%;
+  margin: auto;
+}
+.col-lg-5 {
+  width: 60%;
+}
+.navbar {
+  padding-left: 267px;
+}
+.resultJS {
+  display: block;
+  font-size: 14px;
+  text-align: center;
+  letter-spacing: 0.1em;
+  padding: 5px 5px;
+  border: 5px solid #fff;
+  transition: all 0.5s ease;
+}
