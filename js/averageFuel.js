@@ -11,7 +11,7 @@ function checkForm(el) {
       return (document.getElementById("averageFuel").innerHTML =
         "Fuel or Distance can`t be negative");
     }
-    const averConFuel = (gas * 100) / distance;
+    const averConFuel = Math.round10(gas * 100) / distance;
     const resultForm1 = `${text3} ${averConFuel} ${text4} ${text6}`;
     return (document.getElementById("averageFuel").innerHTML = resultForm1);
   };
