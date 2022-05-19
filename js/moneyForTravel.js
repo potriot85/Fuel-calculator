@@ -37,7 +37,8 @@ function checkForm2(el) {
       return (document.getElementById("needMoney").innerHTML =
         "Distance or average fuel consumption can`t be negative");
     }
-    const allGasCosts = Math.round10(allDist / 100) * averGas * gasCosts;
+    const allGasCostsNonCeil = (allDist / 100) * averGas * gasCosts;
+    const allGasCosts = allGasCostsNonCeil.toFixed(2);
     const resultForm2 = `${textOne} ${allGasCosts} ${textTwo} ${planDistance} ${text5}`;
     return (document.getElementById("needMoney").innerHTML = resultForm2);
   };
