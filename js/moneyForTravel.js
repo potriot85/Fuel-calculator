@@ -8,9 +8,6 @@ function checkForm2(el) {
   let fuelTypeCosts;
   const typeOfFuel = (fuelType) => {
     fuelType = typeFuel;
-    if (typeof fuelType !== "string") {
-      return console.log("Please choose fuel type");
-    }
     if (fuelType === "Gas 95") {
       fuelTypeCosts = 45;
       return fuelTypeCosts;
@@ -33,6 +30,10 @@ function checkForm2(el) {
     averGas = averFuel;
     allDist = planDistance;
     gasCosts = fuelTypeCosts;
+    if ( gasCosts === undefined) {
+      return (document.getElementById("needMoney").innerHTML =
+        "Please choose type of fuel");
+    }
     if (averGas <= 0 || allDist <= 0) {
       return (document.getElementById("needMoney").innerHTML =
         "Distance or average fuel consumption can`t be negative");
